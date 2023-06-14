@@ -14,7 +14,7 @@
 }
 /*Background*/
 body{
-	background-image: url(purple_hex.png);
+	background-image: url(../img/purple_hex.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-origin: content-box;
@@ -71,12 +71,12 @@ body{
 
 }
 .head2 div .sh{
-	border: 1px solid #333;
 	width: 30%;
 	margin: 15px 34%;
 	padding: 15px 16px;
-	box-shadow: 0 0 10px 1px #333;
-	border-radius: 5px;
+	box-shadow: 0 0 10px 3px #fff;
+	
+	border-radius: 10px;
 }
 .head2 div .sh{
 	font-size: 20px;
@@ -148,39 +148,75 @@ label{
 .card-r{
 	width: 60%;
 	height: 80%;
-	border: 1px solid #fff;
+	border: 1px solid #004A7FFF;
 	margin: 5% 20%;
-	background: #fff;
+	background: #253845FF;
 	border-radius: 10px;
 	padding: 10px 20px;
-	box-shadow: 0 0 3px 2px #fff;
-	overflow: auto;
+	box-shadow: 0 0 8px 2px #fff;
+	overflow: hidden;
+
 }
 .r-r{
-	display: grid;
-	grid-template-areas: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-	grid-template-columns: 20% 20% 20% 20% 20% ;
+	display: flex;justify-content: center;align-items: center;
 }
 .r-n{
-	margin: 5px 15px;
-	border: 1px solid #0026FF81;
+	margin: 15% 15%;
+	border-radius: 10px;
 	padding:5px 10px;
+	box-shadow: 0 0 5px 4px #08A5B5DB ;
+	color: #fff;
+	width: 50%;
+	font-size: 50px;
+	line-height: 100px;
+	text-align: center;
+
 }
 .closeBtn{
 	cursor: pointer;
 	font-size: 18px;
-	font-weight: bolder;
-	position: absolute;
-	top: 13%;
 	padding: 8px 20px;
-	transition: .5s ease;
-	right: 23%;
+	transition: 1s ease;
 	border-radius: 10px;
+	color: #fff;
+	animation: btn-anim 1s infinite;
+	box-shadow: 0 0 5px 3px #08A5B5DB ;
+	border-left:3px solid #fff;
+	border-top:3px solid #fff;
+	border: 5px solid #08A5B5DB;
+	position: absolute;bottom:15%;right: 47%;
 }
 .closeBtn:hover{
-	background: #333;
-	color: #fff;
+	border-radius: 50%;
+	background: #08A5B5DB;
+	box-shadow: 0 0 10px 4px #08A5B5DB ;
+	animation: none;
 
+}
+@keyframes btn-anim{
+	0%{
+		border-left:5px solid #08A5B5DB;
+		border-top:5px solid #08A5B5DB;
+		border-bottom:5px solid #fff;
+		border-right:5px solid #fff;
+	}
+	25%{
+		border-left:5px solid #fff;
+		border-top:5px solid #08A5B5DB;
+		border-bottom:5px solid #fff;
+		border-right:5px solid #08A5B5DB;
+	}50%{
+		border-left:5px solid #fff;
+		border-top:5px solid #fff;
+		border-bottom:5px solid #08A5B5DB;
+		border-right:5px solid #08A5B5DB;
+	}75%{
+		border-left:5px solid #08A5B5DB;
+		border-bottom:5px solid #08A5B5DB;
+		border-top:5px solid #fff;
+		border-right:5px solid #fff;
+	}
+	
 }
 .li-r{
 	font-size: 100px!important;
@@ -191,6 +227,13 @@ label{
 }
 .center{
 	align-items:center;
+}
+.scroll .resh{
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 25px!important;
+	text-align: center;
+	margin-top: 15px;
 }
 
 
